@@ -1,5 +1,6 @@
 .video-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
@@ -11,4 +12,54 @@
 	max-width: 800px;
 	border-radius: 16px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hero {
+	display: flex;
+	margin-top: 1%;
+	gap: 20px;
+}
+
+button {
+	border-radius: 20px;
+	padding: 10px 30px;
+	border: 1px solid #60a7e57e;
+	cursor: pointer;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	background: #28aac8;
+}
+
+.btn-explore {
+	border: 1px solid #28aac8;
+	color: #28aac8;
+	background: #fdfdfd;
+}
+
+.btn-explore:hover {
+	background: #28aac8;
+	color: #fff;
+}
+
+.btn-ticket {
+	border: 1px solid #28aac8;
+	color: #fff;
+	background: #28aac8;
+}
+
+.btn-ticket:hover {
+	border: 1px solid #28aac8;
+	color: #28aac8;
+	background: #fff;
+}
+
+@media (max-width: 768px) {
+	.video-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 40vh;
+		background-color: #f7f7f7;
+	}
 }
