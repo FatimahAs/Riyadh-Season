@@ -1,0 +1,30 @@
+.marquee-container {
+	position: relative;
+	overflow: hidden;
+	padding: 20px;
+	background: #3d3d3d;
+}
+
+.marquee {
+	display: flex;
+	gap: 40px;
+	white-space: nowrap;
+	animation: scroll 20s linear infinite;
+	padding: 10px 0;
+}
+
+.logo {
+	width: 70px;
+	height: auto;
+	object-fit: contain;
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(100%);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
